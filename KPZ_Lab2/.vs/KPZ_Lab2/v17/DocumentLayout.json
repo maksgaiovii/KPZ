@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Legion\\source\\repos\\KPZ_Lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3292A3-D891-4724-B47A-1C630F9203BA}|..\\Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\organizer.ui\\usercontrol1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3292A3-D891-4724-B47A-1C630F9203BA}|..\\Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\organizer.ui\\usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\organizer.model\\serialization\\dataserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23BF22E5-E10F-411E-BFFB-D226AB0C516B}|..\\Lab2Test\\Lab2Test.csproj|c:\\users\\legion\\source\\repos\\lab2test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserControl1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\Organizer.UI\\UserControl1.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Organizer.UI\\UserControl1.xaml.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\Organizer.UI\\UserControl1.xaml.cs",
+              "RelativeToolTip": "..\\Organizer.UI\\UserControl1.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T14:51:50.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserControl1.xaml",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\Organizer.UI\\UserControl1.xaml",
+              "RelativeDocumentMoniker": "..\\Organizer.UI\\UserControl1.xaml",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\Organizer.UI\\UserControl1.xaml",
+              "RelativeToolTip": "..\\Organizer.UI\\UserControl1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-03T14:51:45.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataSerializer.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\Organizer.Model\\Serialization\\DataSerializer.cs",
+              "RelativeDocumentMoniker": "..\\Organizer.Model\\Serialization\\DataSerializer.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\Organizer.Model\\Serialization\\DataSerializer.cs",
+              "RelativeToolTip": "..\\Organizer.Model\\Serialization\\DataSerializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T14:30:20.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\Lab2Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\Lab2Test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\Lab2Test\\UnitTest1.cs",
+              "RelativeToolTip": "..\\Lab2Test\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T13:04:39.834Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

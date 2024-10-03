@@ -1,0 +1,37 @@
+{
+  "Books": [
+    {
+      "BookId": 1,
+      "BookTitle": "Title",
+      "NumberOfPages": 100,
+      "Genre": "Fantasy",
+      "LanguageCode": "en",
+      "BookStatus": 4
+    }
+  ],
+  "PrintingHouses": [
+    {
+      "PrintingHouseID": 1,
+      "Name": "name",
+      "Address": "4 Bandery Lviv"
+    }
+  ],
+  "TeamMembers": [
+    {
+      "TeamMemberId": 1,
+      "Name": "name",
+      "Surname": "surname",
+      "Email": "email@gmail.com",
+      "Role": 1
+    }
+  ],
+  "Texts": [
+    {
+      "TextId": 1,
+      "AuthorName": "Name",
+      "AuthorSurname": "Surname",
+      "ReceiptDate": "2024-01-01T00:00:00",
+      "Title": "Title"
+    }
+  ]
+}
