@@ -5,6 +5,11 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>WinExe</OutputType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Organizer.Model\Organizer.Model.csproj" />
+  </ItemGroup>
 
 </Project>

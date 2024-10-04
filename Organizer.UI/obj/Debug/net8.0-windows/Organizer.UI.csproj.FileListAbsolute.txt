@@ -1,0 +1,4 @@
+C:\Users\Legion\source\repos\KPZ\Organizer.UI\obj\Debug\net8.0-windows\Organizer.UI.csproj.AssemblyReference.cache
+C:\Users\Legion\source\repos\KPZ\Organizer.UI\obj\Debug\net8.0-windows\UserControl1.g.cs
+C:\Users\Legion\source\repos\KPZ\Organizer.UI\obj\Debug\net8.0-windows\Organizer.UI_MarkupCompile.cache
+C:\Users\Legion\source\repos\KPZ\Organizer.UI\obj\Debug\net8.0-windows\Organizer.UI_MarkupCompile.lref

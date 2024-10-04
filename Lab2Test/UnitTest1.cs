@@ -16,13 +16,13 @@ namespace Lab2Test
             model.Books = new List<Book> { new Book { BookId = 1, BookTitle = "Title", NumberOfPages = 100, Genre = "Fantasy", LanguageCode = "en", BookStatus = BookStatus.InProgress } };
             model.PrintingHouses=new List<PrintingHouse> { new PrintingHouse{PrintingHouseID=1,Name="name",Address="4 Bandery Lviv"} };
 
-            DataSerializer.SerializeData(@"C:\Users\Legion\source\repos\KPZ_Lab2\SerializationTest.dat",model);
+            DataSerializer.SerializeData(@"C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\SerializationTest.dat", model);
         }
 
         [Fact]
         public void Deserialize_WhenDataIsValid_Success()
         {
-            var model = DataSerializer.DeserializeData(@"C:\Users\Legion\source\repos\KPZ_Lab2\SerializationTest.dat");
+            var model = DataSerializer.DeserializeData(@"C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\SerializationTest.dat");
         }
     }
 }

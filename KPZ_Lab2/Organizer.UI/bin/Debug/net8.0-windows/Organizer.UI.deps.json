@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Organizer.UI/1.0.0": {
+        "dependencies": {
+          "Organizer.Model": "1.0.0"
+        },
+        "runtime": {
+          "Organizer.UI.dll": {}
+        }
+      },
+      "Organizer.Model/1.0.0": {
+        "runtime": {
+          "Organizer.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Organizer.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Organizer.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
