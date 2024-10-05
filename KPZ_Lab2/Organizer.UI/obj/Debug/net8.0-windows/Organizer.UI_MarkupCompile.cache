@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\App.xaml
-5-1587314635
+51464393144
 
-151506032871
+17-1507422550
 2071357681407
-Views\BooksUserControl.xaml;Views\MainWindow.xaml;Views\PrintingHousesUserControl.xaml;Views\TeamMembersUserControl.xaml;Views\TextsUserControl.xaml;
+MainWindow.xaml;Views\BooksUserControl.xaml;Views\PrintingHousesUserControl.xaml;Views\TeamMembersUserControl.xaml;Views\TextsUserControl.xaml;
 
-False
+True
 

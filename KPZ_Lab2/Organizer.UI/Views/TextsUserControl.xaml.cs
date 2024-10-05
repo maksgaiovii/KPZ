@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Organizer.UI.Views
+namespace Organizer.UI
 {
     /// <summary>
     /// Interaction logic for TextUserControl.xaml
     /// </summary>
-    public partial class TextUserControl : UserControl
+    public partial class TextsUserControl : UserControl
     {
-        public TextUserControl()
+        public TextsUserControl()
         {
             InitializeComponent();
         }

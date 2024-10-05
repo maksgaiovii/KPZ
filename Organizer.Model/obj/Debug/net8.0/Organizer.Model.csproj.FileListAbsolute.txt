@@ -9,9 +9,11 @@ C:\Users\Legion\source\repos\Organizer.Model\obj\Debug\net8.0\Organizer.Model.dl
 C:\Users\Legion\source\repos\Organizer.Model\obj\Debug\net8.0\refint\Organizer.Model.dll
 C:\Users\Legion\source\repos\Organizer.Model\obj\Debug\net8.0\Organizer.Model.pdb
 C:\Users\Legion\source\repos\Organizer.Model\obj\Debug\net8.0\ref\Organizer.Model.dll
-C:\Users\Legion\source\repos\KPZ\Organizer.Model\bin\Debug\net8.0\Organizer.Model.deps.json
 C:\Users\Legion\source\repos\KPZ\Organizer.Model\bin\Debug\net8.0\Organizer.Model.dll
+C:\Users\Legion\source\repos\KPZ\Organizer.Model\bin\Debug\net8.0\Organizer.Model.deps.json
+C:\Users\Legion\source\repos\KPZ\Organizer.Model\bin\Debug\net8.0\Organizer.Model.runtimeconfig.json
 C:\Users\Legion\source\repos\KPZ\Organizer.Model\bin\Debug\net8.0\Organizer.Model.pdb
+C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\Organizer.Model.csproj.AssemblyReference.cache
 C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\Organizer.Model.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\Organizer.Model.AssemblyInfoInputs.cache
 C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\Organizer.Model.AssemblyInfo.cs
@@ -20,7 +22,5 @@ C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\Organizer.Mode
 C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\Organizer.Model.dll
 C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\refint\Organizer.Model.dll
 C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\Organizer.Model.pdb
-C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\ref\Organizer.Model.dll
-C:\Users\Legion\source\repos\KPZ\Organizer.Model\bin\Debug\net8.0\Organizer.Model.runtimeconfig.json
-C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\Organizer.Model.csproj.AssemblyReference.cache
 C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\Organizer.Model.genruntimeconfig.cache
+C:\Users\Legion\source\repos\KPZ\Organizer.Model\obj\Debug\net8.0\ref\Organizer.Model.dll

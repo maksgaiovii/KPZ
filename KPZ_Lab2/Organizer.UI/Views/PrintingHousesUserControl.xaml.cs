@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Organizer.UI.Views
+namespace Organizer.UI
 {
     /// <summary>
     /// Interaction logic for PrintingHouseUserControl.xaml
     /// </summary>
-    public partial class PrintingHouseUserControl : UserControl
+    public partial class PrintingHousesUserControl : UserControl
     {
-        public PrintingHouseUserControl()
+        public PrintingHousesUserControl()
         {
             InitializeComponent();
         }

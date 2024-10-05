@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Organizer.UI.Views
+namespace Organizer.UI
 {
     /// <summary>
     /// Interaction logic for TeamMemberUserControl.xaml
     /// </summary>
-    public partial class TeamMemberUserControl : UserControl
+    public partial class TeamMembersUserControl : UserControl
     {
-        public TeamMemberUserControl()
+        public TeamMembersUserControl()
         {
             InitializeComponent();
         }

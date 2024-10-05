@@ -100,9 +100,11 @@ C:\Users\Legion\source\repos\Lab2Test\obj\Debug\net8.0\ref\Lab2Test.dll
 C:\Users\Legion\source\repos\Lab2Test\bin\Debug\net8.0\CoverletSourceRootsMapping_Lab2Test
 C:\Users\Legion\source\repos\Lab2Test\bin\Debug\net8.0\Organizer.Model.dll
 C:\Users\Legion\source\repos\Lab2Test\bin\Debug\net8.0\Organizer.Model.pdb
+C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Lab2Test
 C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\CoverletSourceRootsMapping_Lab2Test
-C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\testhost.exe
 C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\testhost.dll
+C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\testhost.exe
+C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\Lab2Test.deps.json
@@ -201,5 +203,3 @@ C:\Users\Legion\source\repos\KPZ\Lab2Test\obj\Debug\net8.0\refint\Lab2Test.dll
 C:\Users\Legion\source\repos\KPZ\Lab2Test\obj\Debug\net8.0\Lab2Test.pdb
 C:\Users\Legion\source\repos\KPZ\Lab2Test\obj\Debug\net8.0\Lab2Test.genruntimeconfig.cache
 C:\Users\Legion\source\repos\KPZ\Lab2Test\obj\Debug\net8.0\ref\Lab2Test.dll
-C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Lab2Test
-C:\Users\Legion\source\repos\KPZ\Lab2Test\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll

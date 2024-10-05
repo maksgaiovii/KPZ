@@ -3,10 +3,11 @@
     "",
     "\\KPZ_Lab2",
     "\\KPZ_Lab2\\Organizer.UI",
+    "\\KPZ_Lab2\\Organizer.UI\\Views",
     "\\Lab2Test",
     "\\Organizer.Model",
     "\\Organizer.UI"
   ],
-  "SelectedNode": "\\Organizer.Model\\SerializationTest.cs",
+  "SelectedNode": "\\KPZ_Lab2\\Organizer.UI\\Views\\PrintingHousesUserControl.xaml",
   "PreviewInSolutionExplorer": false
 }

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Organizer.UI.Views
+namespace Organizer.UI
 {
     /// <summary>
     /// Interaction logic for BookUserControl.xaml
     /// </summary>
-    public partial class BookUserControl : UserControl
+    public partial class BooksUserControl : UserControl
     {
-        public BookUserControl()
+        public BooksUserControl()
         {
             InitializeComponent();
         }

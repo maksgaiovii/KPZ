@@ -27,9 +27,9 @@
   ],
   "PrintingHouses": [
     {
-      "PrintingHouseID": 1,
+      "PrintingHouseId": 0,
       "Name": "name",
-      "Address": "4 Bandery Lviv"
+      "Address": null
     }
   ],
   "TeamMembers": [

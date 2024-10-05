@@ -10,6 +10,13 @@ namespace Organizer.UI.ViewModels
 {
     class DataViewModel : ViewModelBase
     {
+        private string _visibleControl="Books";
+
+        public string VisibleControl
+        {
+            get { return _visibleControl; }
+            set { _visibleControl = value; OnPropertyChanged("VisibleControl"); }
+        }
 
         private ObservableCollection<BookViewModel> _books;
 

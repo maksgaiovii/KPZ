@@ -1,0 +1,31 @@
+﻿<Window xmlns:Views="clr-namespace:Organizer.UI"  x:Class="Organizer.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Organizer.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <!-- <StackPanel>
+            <Button Name="Books"></Button>
+            <Button Name="PrintingHouses"></Button>
+            <Button Name="TeamMembers"></Button>
+            <Button Name="Texts"></Button>
+
+        </StackPanel>
+
+        <StackPanel>
+            <Views:BooksUserControl />
+            <Views:PrintingHousesUserControl />
+            <Views:TeamMembersUserControl />
+            <Views:TextsUserControl />
+        </StackPanel>-->
+    </Grid>
+</Window>
