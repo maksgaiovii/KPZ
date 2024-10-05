@@ -4,8 +4,9 @@
     "\\KPZ_Lab2",
     "\\KPZ_Lab2\\Organizer.UI",
     "\\Lab2Test",
+    "\\Organizer.Model",
     "\\Organizer.UI"
   ],
-  "SelectedNode": "\\KPZ_Lab2\\KPZ_Lab2.sln",
+  "SelectedNode": "\\Organizer.Model\\SerializationTest.cs",
   "PreviewInSolutionExplorer": false
 }
