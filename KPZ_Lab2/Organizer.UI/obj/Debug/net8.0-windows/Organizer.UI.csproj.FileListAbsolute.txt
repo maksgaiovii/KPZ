@@ -23,3 +23,7 @@ C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\obj\Debug\net8.0-windows\
 C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\obj\Debug\net8.0-windows\Organizer.UI.pdb
 C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\obj\Debug\net8.0-windows\Organizer.UI.genruntimeconfig.cache
 C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\obj\Debug\net8.0-windows\ref\Organizer.UI.dll
+C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\xunit.abstractions.dll
+C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\xunit.assert.dll
+C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\xunit.core.dll
+C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\xunit.execution.dotnet.dll

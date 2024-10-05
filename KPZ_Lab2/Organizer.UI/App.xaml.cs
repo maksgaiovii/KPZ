@@ -18,6 +18,19 @@ namespace Organizer.UI
             var window = new MainWindow { DataContext = _model };
             window.Show();
         }
+
+        protected override void OnExit(ExitEventArgs e)
+        {
+            try
+            {
+                _model.Save();
+            }
+            catch (Exception)
+            {
+                base.OnExit(e);
+                throw;
+            }
+        }
     }
 
 }

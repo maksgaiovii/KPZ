@@ -7,6 +7,22 @@
       "Genre": "Fantasy",
       "LanguageCode": "en",
       "BookStatus": 4
+    },
+    {
+      "BookId": 0,
+      "BookTitle": "Here",
+      "NumberOfPages": 250,
+      "Genre": "Fantasy",
+      "LanguageCode": "en",
+      "BookStatus": 3
+    },
+    {
+      "BookId": 0,
+      "BookTitle": null,
+      "NumberOfPages": 0,
+      "Genre": null,
+      "LanguageCode": null,
+      "BookStatus": 0
     }
   ],
   "PrintingHouses": [

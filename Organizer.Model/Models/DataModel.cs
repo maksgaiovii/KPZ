@@ -9,7 +9,7 @@ namespace KPZ_Lab2.Models
 {
 
     [Serializable]
-    public class DataModel
+    public class DataModel 
     {
         public IEnumerable<Book> Books { get; set; }
 
