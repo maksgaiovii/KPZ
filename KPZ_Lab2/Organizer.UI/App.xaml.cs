@@ -1,4 +1,7 @@
-﻿using KPZ_Lab2.Models;
+﻿using AutoMapper;
+using KPZ_Lab2.Models;
+using Organizer.UI.Base;
+using Organizer.UI.ViewModels;
 using System.Configuration;
 using System.Data;
 using System.Windows;
@@ -12,10 +15,20 @@ namespace Organizer.UI
     {
         private DataModel _model;
 
+        private DataViewModel _viewModel;
+
+        private readonly IMapper _mapper;
+
         public App()
         {
+            
+            var mapping = new Mapping();
+            _mapper = mapping.GetMapper(); 
+
             _model = DataModel.Load();
-            var window = new MainWindow { DataContext = _model };
+            _viewModel = _mapper.Map<DataModel,DataViewModel>(_model);
+
+            var window = new MainWindow { DataContext = _viewModel };
             window.Show();
         }
 
@@ -23,6 +36,7 @@ namespace Organizer.UI
         {
             try
             {
+                _model=_mapper.Map<DataViewModel, DataModel>(_viewModel);
                 _model.Save();
             }
             catch (Exception)

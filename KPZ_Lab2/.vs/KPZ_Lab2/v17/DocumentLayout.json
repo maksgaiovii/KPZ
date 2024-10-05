@@ -3,39 +3,57 @@
   "WorkspaceRootPath": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\kpz\\organizer.model\\serializationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\textviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\textviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FB0380B-8C9D-491C-B855-753B5E46394C}|Solution Items{6FB0380B-8C9D-491C-B855-753B5E46394C}|C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\README.txt||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{6FB0380B-8C9D-491C-B855-753B5E46394C}|Solution Items{6FB0380B-8C9D-491C-B855-753B5E46394C}|solutionrelative:README.txt||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\teammemberviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\teammemberviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\kpz\\organizer.model\\serialization\\dataserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\printinghouseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\printinghouseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\base\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\base\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\kpz\\organizer.model\\models\\printinghouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\textviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\textviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\kpz\\organizer.model\\models\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\kpz\\organizer.model\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\teammemberviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\teammemberviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\kpz\\organizer.model\\models\\teammember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\kpz\\organizer.model\\models\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\organizer.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\organizer.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,12 +62,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|c:\\users\\legion\\source\\repos\\kpz\\kpz_lab2\\organizer.ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}|Organizer.UI\\Organizer.UI.csproj|solutionrelative:organizer.ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\kpz\\organizer.model\\serialization\\dataserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{580ACB72-9488-43BE-9181-BCE8A42FC77A}|..\\Organizer.Model\\Organizer.Model.csproj|c:\\users\\legion\\source\\repos\\kpz\\organizer.model\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23BF22E5-E10F-411E-BFFB-D226AB0C516B}|..\\Lab2Test\\Lab2Test.csproj|c:\\users\\legion\\source\\repos\\kpz\\lab2test\\lab2test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -67,98 +79,189 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\ViewModelBase.cs",
-              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\ViewModelBase.cs",
-              "RelativeToolTip": "Organizer.UI\\ViewModels\\ViewModelBase.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAfAAAA",
+              "Title": "SerializationTest.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\SerializationTest.cs",
+              "RelativeDocumentMoniker": "..\\Organizer.Model\\SerializationTest.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\SerializationTest.cs",
+              "RelativeToolTip": "..\\Organizer.Model\\SerializationTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:04:42.365Z",
+              "WhenOpened": "2024-10-05T14:49:33.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TextViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\TextViewModel.cs",
-              "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\TextViewModel.cs",
-              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\TextViewModel.cs",
-              "RelativeToolTip": "Organizer.UI\\ViewModels\\TextViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:04:27.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TeamMemberViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\TeamMemberViewModel.cs",
-              "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\TeamMemberViewModel.cs",
-              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\TeamMemberViewModel.cs",
-              "RelativeToolTip": "Organizer.UI\\ViewModels\\TeamMemberViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:04:09.431Z",
+              "Title": "README.txt",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\README.txt",
+              "RelativeDocumentMoniker": "README.txt",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\README.txt",
+              "RelativeToolTip": "README.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-05T14:46:33.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PrintingHouseViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\PrintingHouseViewModel.cs",
-              "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\PrintingHouseViewModel.cs",
-              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\PrintingHouseViewModel.cs",
-              "RelativeToolTip": "Organizer.UI\\ViewModels\\PrintingHouseViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Mapping.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\Base\\Mapping.cs",
+              "RelativeDocumentMoniker": "Organizer.UI\\Base\\Mapping.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\Base\\Mapping.cs",
+              "RelativeToolTip": "Organizer.UI\\Base\\Mapping.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:03:53.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\BookViewModel.cs",
-              "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\BookViewModel.cs",
-              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\BookViewModel.cs",
-              "RelativeToolTip": "Organizer.UI\\ViewModels\\BookViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:03:29.43Z",
+              "WhenOpened": "2024-10-05T13:37:21.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "PrintingHouse.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\PrintingHouse.cs",
+              "RelativeDocumentMoniker": "..\\Organizer.Model\\Models\\PrintingHouse.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\PrintingHouse.cs",
+              "RelativeToolTip": "..\\Organizer.Model\\Models\\PrintingHouse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:27:32.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Text.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\Text.cs",
+              "RelativeDocumentMoniker": "..\\Organizer.Model\\Models\\Text.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\Text.cs",
+              "RelativeToolTip": "..\\Organizer.Model\\Models\\Text.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:23:43.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TextViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\TextViewModel.cs",
+              "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\TextViewModel.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\TextViewModel.cs",
+              "RelativeToolTip": "Organizer.UI\\ViewModels\\TextViewModel.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwC8AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:23:12.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataSerializer.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Serialization\\DataSerializer.cs",
+              "RelativeDocumentMoniker": "..\\Organizer.Model\\Serialization\\DataSerializer.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Serialization\\DataSerializer.cs",
+              "RelativeToolTip": "..\\Organizer.Model\\Serialization\\DataSerializer.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:59:44.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TeamMemberViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\TeamMemberViewModel.cs",
+              "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\TeamMemberViewModel.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\TeamMemberViewModel.cs",
+              "RelativeToolTip": "Organizer.UI\\ViewModels\\TeamMemberViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:18:54.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "..\\Organizer.Model\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\Book.cs",
+              "RelativeToolTip": "..\\Organizer.Model\\Models\\Book.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:08:58.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Organizer.UI\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\App.xaml.cs",
+              "RelativeToolTip": "Organizer.UI\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:48:06.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TeamMember.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\TeamMember.cs",
+              "RelativeDocumentMoniker": "..\\Organizer.Model\\Models\\TeamMember.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\TeamMember.cs",
+              "RelativeToolTip": "..\\Organizer.Model\\Models\\TeamMember.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:19:06.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "DataViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\DataViewModel.cs",
               "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\DataViewModel.cs",
               "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\DataViewModel.cs",
               "RelativeToolTip": "Organizer.UI\\ViewModels\\DataViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T11:00:15.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Organizer.UI",
-              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\Organizer.UI.csproj",
-              "RelativeDocumentMoniker": "Organizer.UI\\Organizer.UI.csproj",
-              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\Organizer.UI.csproj",
-              "RelativeToolTip": "Organizer.UI\\Organizer.UI.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-05T10:54:58.47Z",
+              "DocumentIndex": 13,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "Organizer.UI\\ViewModels\\ViewModelBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T11:04:42.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Lab2Test",
+              "DocumentIndex": 12,
+              "Title": "BookViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\BookViewModel.cs",
+              "RelativeDocumentMoniker": "Organizer.UI\\ViewModels\\BookViewModel.cs",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\ViewModels\\BookViewModel.cs",
+              "RelativeToolTip": "Organizer.UI\\ViewModels\\BookViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T11:03:29.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Lab2Test.csproj",
               "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Lab2Test\\Lab2Test.csproj",
               "RelativeDocumentMoniker": "..\\Lab2Test\\Lab2Test.csproj",
               "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Lab2Test\\Lab2Test.csproj",
@@ -170,59 +273,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\Organizer.Model\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\UnitTest1.cs",
-              "RelativeToolTip": "..\\Organizer.Model\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T10:51:51.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DataSerializer.cs",
-              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Serialization\\DataSerializer.cs",
-              "RelativeDocumentMoniker": "..\\Organizer.Model\\Serialization\\DataSerializer.cs",
-              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Serialization\\DataSerializer.cs",
-              "RelativeToolTip": "..\\Organizer.Model\\Serialization\\DataSerializer.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA4AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T20:59:44.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "DataModel.cs",
               "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\DataModel.cs",
               "RelativeDocumentMoniker": "..\\Organizer.Model\\Models\\DataModel.cs",
               "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Models\\DataModel.cs",
               "RelativeToolTip": "..\\Organizer.Model\\Models\\DataModel.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T20:59:15.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\App.xaml.cs",
-              "RelativeDocumentMoniker": "Organizer.UI\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\App.xaml.cs",
-              "RelativeToolTip": "Organizer.UI\\App.xaml.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwCAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T20:48:06.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Organizer.UI\\MainWindow.xaml",
@@ -234,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Organizer.UI\\MainWindow.xaml.cs",

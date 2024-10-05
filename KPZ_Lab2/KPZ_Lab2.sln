@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab2Test", "..\Lab2Test\Lab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Organizer.Model", "..\Organizer.Model\Organizer.Model.csproj", "{580ACB72-9488-43BE-9181-BCE8A42FC77A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Organizer.UI", "Organizer.UI\Organizer.UI.csproj", "{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Organizer.UI", "Organizer.UI\Organizer.UI.csproj", "{8C6DDEE4-EC93-46E3-AF8F-A901D750DB9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6FB0380B-8C9D-491C-B855-753B5E46394C}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

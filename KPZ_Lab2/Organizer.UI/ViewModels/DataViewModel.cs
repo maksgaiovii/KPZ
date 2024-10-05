@@ -8,15 +8,39 @@ using System.Threading.Tasks;
 
 namespace Organizer.UI.ViewModels
 {
-    class DataViewModel
+    class DataViewModel : ViewModelBase
     {
 
-        public ObservableCollection<Book> Books { get; set; }
+        private ObservableCollection<BookViewModel> _books;
 
-        public ObservableCollection<PrintingHouse> PrintingHouses { get; set; }
+        public ObservableCollection<BookViewModel> Books
+        {
+            get { return _books; }
+            set { _books = value; OnPropertyChanged("Books"); }
+        }
 
-        public ObservableCollection<TeamMember> TeamMembers { get; set; }
 
-        public ObservableCollection<Text> Texts { get; set; }
+        private ObservableCollection<PrintingHouseViewModel> _printingHouses;
+
+        public ObservableCollection<PrintingHouseViewModel> PrintingHouses
+        {
+            get { return _printingHouses; }
+            set { _printingHouses = value; OnPropertyChanged("PrintingHouses"); }
+        }
+
+        private ObservableCollection<TeamMemberViewModel> _teamMembers;
+
+        public ObservableCollection<TeamMemberViewModel> TeamMembers
+        {
+            get { return _teamMembers; }
+            set { _teamMembers = value; OnPropertyChanged("TeamMembers"); }
+        }
+
+        private ObservableCollection<TextViewModel> _texts;
+        public ObservableCollection<TextViewModel> Texts
+        {
+            get { return _texts; }
+            set { _texts = value; OnPropertyChanged("Texts"); }
+        }
     }
 }

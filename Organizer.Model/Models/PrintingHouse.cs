@@ -9,7 +9,7 @@ namespace KPZ_Lab2.Models
     [Serializable]
     public class PrintingHouse
     {
-        public int PrintingHouseID { get; set; }
+        public int PrintingHouseId { get; set; }
         public string Name { get; set; }
 
         public string Address { get; set; }
