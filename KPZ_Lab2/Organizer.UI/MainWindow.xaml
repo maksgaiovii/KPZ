@@ -4,8 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Organizer.UI"
+        xmlns:converters="clr-namespace:Organizer.UI.Converters"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Style="{DynamicResource MaterialDesignWindow}"
+        >
+    <Window.Resources>
+        <converters:ControlVisibility x:Key="ControlVisibility"/>
+    </Window.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -13,19 +21,35 @@
         </Grid.RowDefinitions>
 
 
-        <!-- <StackPanel>
-            <Button Name="Books"></Button>
-            <Button Name="PrintingHouses"></Button>
-            <Button Name="TeamMembers"></Button>
-            <Button Name="Texts"></Button>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left"  >
+            <Button Name="Books"
+                    Content="Books"
+                    Command="{Binding NavigateTo}" 
+                    CommandParameter="Books"
+                    ></Button>
+            <Button Name="PrintingHouses"
+                    Content="PrintingHouses"
+                    Command="{Binding NavigateTo}" 
+                    CommandParameter="PrintingHouses"
+                    ></Button>
+            <Button Name="TeamMembers"
+                    Content="TeamMembers"
+                    Command="{Binding NavigateTo}" 
+                    CommandParameter="TeamMembers"
+                    ></Button>
+            <Button Name="Texts"
+                    Content="Texts"
+                    Command="{Binding NavigateTo}" 
+                    CommandParameter="Texts"
+                    ></Button>
 
         </StackPanel>
 
-        <StackPanel>
-            <Views:BooksUserControl />
-            <Views:PrintingHousesUserControl />
-            <Views:TeamMembersUserControl />
-            <Views:TextsUserControl />
-        </StackPanel>-->
+        <StackPanel Grid.Row="1">
+            <Views:BooksUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource ControlVisibility}, ConverterParameter=Books}" />
+            <Views:PrintingHousesUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource ControlVisibility}, ConverterParameter=PrintingHouses}" />
+            <Views:TeamMembersUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource ControlVisibility}, ConverterParameter=TeamMembers}" />
+            <Views:TextsUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource ControlVisibility}, ConverterParameter=Texts}" />
+        </StackPanel>
     </Grid>
 </Window>

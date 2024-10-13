@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\obj\Debug\net8.0-windows\
+C:\ProjectsNew\Labs\KPZ\lab2\KPZ\KPZ_Lab2\Organizer.UI\obj\Debug\net8.0-windows\
 Organizer.UI
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\App.xaml
+C:\ProjectsNew\Labs\KPZ\lab2\KPZ\KPZ_Lab2\Organizer.UI\App.xaml
 51464393144
 
 19-813787421
-2071357681407
+210-198898992
 MainWindow.xaml;Views\BooksUserControl.xaml;Views\PrintingHousesUserControl.xaml;Views\TeamMembersUserControl.xaml;Views\TextsUserControl.xaml;
 
-False
+True
 

@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <DataGrid AutoGenerateColumns="True" HorizontalAlignment="Left" Height="261" Margin="64,71,0,0" VerticalAlignment="Top" Width="592" ItemsSource="{Binding Path=PrintingHouses}" SelectionChanged="DataGrid_SelectionChanged" />
+        <DataGrid AutoGenerateColumns="True" VerticalAlignment="Top" Margin="0 15 0 0" ItemsSource="{Binding Path=PrintingHouses}" SelectionChanged="DataGrid_SelectionChanged" />
 
     </Grid>
 </UserControl>

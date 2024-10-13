@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Organizer.UI.ViewModels
 {
@@ -48,6 +49,13 @@ namespace Organizer.UI.ViewModels
         {
             get { return _texts; }
             set { _texts = value; OnPropertyChanged("Texts"); }
+        }
+
+        public ICommand NavigateTo { get; set; }
+
+        public DataViewModel()
+        {
+            NavigateTo = new Command((o => VisibleControl = (string)o!));
         }
     }
 }
