@@ -564,23 +564,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vasil\\.nuget\\packages\\": {},
+    "C:\\Users\\Legion\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProjectsNew\\Labs\\KPZ\\lab2\\KPZ\\KPZ_Lab2\\Organizer.UI\\Organizer.UI.csproj",
+      "projectUniqueName": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\Organizer.UI.csproj",
       "projectName": "Organizer.UI",
-      "projectPath": "C:\\ProjectsNew\\Labs\\KPZ\\lab2\\KPZ\\KPZ_Lab2\\Organizer.UI\\Organizer.UI.csproj",
-      "packagesPath": "C:\\Users\\vasil\\.nuget\\packages\\",
-      "outputPath": "C:\\ProjectsNew\\Labs\\KPZ\\lab2\\KPZ\\KPZ_Lab2\\Organizer.UI\\obj\\",
+      "projectPath": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\Organizer.UI.csproj",
+      "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\Organizer.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vasil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -589,14 +589,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\ProjectsNew\\Labs\\KPZ\\lab2\\KPZ\\Organizer.Model\\Organizer.Model.csproj": {
-              "projectPath": "C:\\ProjectsNew\\Labs\\KPZ\\lab2\\KPZ\\Organizer.Model\\Organizer.Model.csproj"
+            "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Organizer.Model.csproj": {
+              "projectPath": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Organizer.Model.csproj"
             }
           }
         }

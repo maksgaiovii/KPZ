@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Organizer.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b70e92de4233f17ad3fc1082eea4cb8844df0a8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37481f7092ab177b996047b59e8e382423bab392")]
 [assembly: System.Reflection.AssemblyProductAttribute("Organizer.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Organizer.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -86,3 +86,7 @@ C:\ProjectsNew\Labs\KPZ\lab2\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\
 C:\ProjectsNew\Labs\KPZ\lab2\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
 C:\ProjectsNew\Labs\KPZ\lab2\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
 C:\ProjectsNew\Labs\KPZ\lab2\KPZ\KPZ_Lab2\Organizer.UI\obj\Debug\net8.0-windows\App.baml
+C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\Legion\source\repos\KPZ\KPZ_Lab2\Organizer.UI\obj\Debug\net8.0-windows\App.baml

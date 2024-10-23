@@ -15,14 +15,6 @@
       "Genre": "Fantasy",
       "LanguageCode": "en",
       "BookStatus": 3
-    },
-    {
-      "BookId": 0,
-      "BookTitle": null,
-      "NumberOfPages": 0,
-      "Genre": null,
-      "LanguageCode": null,
-      "BookStatus": 0
     }
   ],
   "PrintingHouses": [
@@ -48,6 +40,20 @@
       "AuthorSurname": "Surname",
       "ReceiptDate": "2024-01-01T00:00:00",
       "Title": "Title"
+    },
+    {
+      "TextId": 2,
+      "AuthorName": "Maks",
+      "AuthorSurname": "Haiovyi",
+      "ReceiptDate": "2024-01-01T00:00:00",
+      "Title": "the Lost World"
+    },
+    {
+      "TextId": 0,
+      "AuthorName": null,
+      "AuthorSurname": null,
+      "ReceiptDate": "0001-01-01T00:00:00",
+      "Title": null
     }
   ]
 }
