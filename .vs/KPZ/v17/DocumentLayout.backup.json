@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Legion\\source\\repos\\KPZ\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KPZ_Lab2\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Legion\\source\\repos\\KPZ\\Lab2Test\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab2Test\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,19 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\App.config",
+              "RelativeDocumentMoniker": "KPZ_Lab2\\App.config",
+              "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\KPZ_Lab2\\App.config",
+              "RelativeToolTip": "KPZ_Lab2\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-13T10:57:33.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Lab2Test\\UnitTest1.cs",
               "RelativeDocumentMoniker": "Lab2Test\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\Legion\\source\\repos\\KPZ\\Lab2Test\\UnitTest1.cs",
               "RelativeToolTip": "Lab2Test\\UnitTest1.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAOAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T19:34:22.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\Legion\\source\\repos\\KPZ\\Organizer.Model\\Class1.cs",
               "RelativeDocumentMoniker": "Organizer.Model\\Class1.cs",

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KPZ_Lab2.Models
+namespace KPZ_Lab5.Models
 {
     [Serializable]
     public class PrintingHouse
