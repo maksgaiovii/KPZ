@@ -45,8 +45,8 @@ export const Table = () => {
   );
 
   const table = useReactTable({
-    columns,
-    data: memoData,
+    columns: columns || [],
+    data: memoData || [],
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
