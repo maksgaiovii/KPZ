@@ -62,10 +62,13 @@ export const Table = () => {
           )
         );
 
-        const id = table.getRowModel().rows[rowIndex].original.id;
+        const id = table.getRowModel().rows[rowIndex].original.bookId;
 
         api
-          .put(id, {
+          .patch(id, 
+            
+            {
+              ...table.getRowModel().rows[rowIndex].original,
             [columnId]: value,
           })
           .catch(() => {

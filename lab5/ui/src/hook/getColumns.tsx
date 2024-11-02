@@ -5,8 +5,11 @@ import { Cell } from "../global/components/Table/cell";
 const columnHelper = createColumnHelper<any>();
 
 const getKeys = (data: any) => {
+  if(data===null || data===undefined){
+    return [];
+  }
   return Object.keys(data)
-    .filter((item) => !["_v", "createdAt", "apdatedAt", "_id"].includes(item))
+    .filter((item) => !["_v", "createdAt", "apdatedAt", "_id","contributorHistories","printingHouseBooks","textBooks"].includes(item))
     .filter((item) => typeof data[item] !== "function");
 };
 
