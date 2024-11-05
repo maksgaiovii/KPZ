@@ -3,7 +3,7 @@ import { Todos } from "./todos";
 import { Users } from "./users";
 
 // here should be the configuration for data, that we want to fetch
-export const baseUrl = "https://jsonplaceholder.typicode.com/";
+export const baseUrl = "http://localhost:5064/api/";
 
 export enum Tabs {
   Todos = "Todos",
