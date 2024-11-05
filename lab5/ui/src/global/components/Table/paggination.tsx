@@ -30,9 +30,9 @@ export const Pagination = ({ table }: PaginationProps) => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M5 1 1 5l4 4"
             />
           </svg>
@@ -40,7 +40,7 @@ export const Pagination = ({ table }: PaginationProps) => {
 
         {table.getPageOptions().map((page) => (
           <li
-            key={page}
+            key={page + "page"}
             className={
               styles[page === table.getState().pagination.pageIndex ? 1 : 0]
             }
@@ -67,9 +67,9 @@ export const Pagination = ({ table }: PaginationProps) => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="m1 9 4-4-4-4"
             />
           </svg>

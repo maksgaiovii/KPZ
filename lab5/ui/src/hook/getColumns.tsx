@@ -1,30 +1,28 @@
 import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
 import { toUpperFirstSumbol } from "../util";
 import { Cell } from "../global/components/Table/cell";
+import { IColumnName } from "../types";
 
 const columnHelper = createColumnHelper<any>();
 
-const getKeys = (data: any) => {
-  return Object.keys(data)
-    .filter((item) => !["_v", "createdAt", "apdatedAt", "_id"].includes(item))
-    .filter((item) => typeof data[item] !== "function");
-};
-
-export const getColumns = (data: any): ColumnDef<any>[] => {
-  return getKeys(data).map((item) => {
-    if (typeof data[item] === "object") {
+export const getColumns = (
+  names: (IColumnName | string)[],
+  parentName = ''
+): ColumnDef<any>[] => {
+  return names.map((item,) => {
+    if (typeof item === "object") {
       return columnHelper.group({
-        id: item,
-        header: toUpperFirstSumbol([item])[0],
-        columns: getColumns(data[item]),
+        id: parentName ? `${parentName}.${item.name}` : item.name,
+        header: toUpperFirstSumbol([item.name])[0],
+        columns: getColumns(item.arr, parentName ? `${parentName}.${item.name}` : item.name ),
       });
     }
 
     return {
-      accessorKey: item,
+      accessorKey: parentName ? `${parentName}.${item}` : item,
       header: toUpperFirstSumbol([item])[0],
       cell: Cell,
-      id: item,
+      id: parentName ? `${parentName}.${item}` : item,
     };
   });
 };

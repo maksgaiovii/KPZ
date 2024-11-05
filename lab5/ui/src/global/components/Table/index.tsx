@@ -1,7 +1,5 @@
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { useEffect, useMemo, useState } from "react";
-import { Api } from "../../../api";
-import { baseUrl } from "../../../config";
 import { useTab } from "../../../context/tab";
 import { getColumns } from "../../../hook/getColumns";
 import {
@@ -15,74 +13,82 @@ import {
 } from "@tanstack/react-table";
 import { Pagination } from "./paggination";
 import { useSkipper } from "../../../hook/useSkipper";
+import { config } from "../../../config";
+import { get, set } from "../../../util";
 
 export const Table = () => {
   const { tab } = useTab();
+  const selectedTab = useMemo(
+    () => config.find(({ tabName }) => tab === tabName),
+    [tab]
+  );
 
-  const api = useMemo(() => new Api(`${baseUrl}${tab}`), [tab]);
-
-  const {
-    data = [],
-    isLoading,
-    error,
-  } = useQuery({
+  const { data, isLoading, error } = useQuery({
     queryKey: [tab],
-    queryFn: () => api.getAll(),
+    queryFn: () => selectedTab?.api?.getAll(),
     placeholderData: keepPreviousData,
-    enabled: !!tab,
+    enabled: !!selectedTab,
   });
 
   const [memoData, setMemoData] = useState(data);
   const [autoResetPageIndex, skipAutoResetPageIndex] = useSkipper();
 
   useEffect(() => {
-    setMemoData(data);
-  }, [data]);
+    setMemoData(selectedTab?.mapToTable(data) || []);
+  }, [data, selectedTab]);
 
   const columns = useMemo(
-    () => getColumns(memoData?.[0] || { id: "" }),
-    [memoData]
+    () => getColumns(selectedTab?.defaultColumns || []),
+    [selectedTab?.defaultColumns]
   );
 
   const table = useReactTable({
     columns: columns || [],
-    data: memoData || [],
+    data: memoData,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
     autoResetPageIndex,
+    enableMultiSort: true,
     meta: {
       updateData: (rowIndex, columnId, value) => {
-        const previousData = memoData[rowIndex][columnId];
+        const previousData = get(memoData[rowIndex], columnId);
+        const body = selectedTab?.mapBeforeUpdate(
+          memoData[rowIndex],
+          columnId,
+          value as string
+        );
+        setMemoData((prev) => {
+          set(prev[rowIndex], columnId, value);
+          return prev;
+        });
 
-        setMemoData((prev) =>
-          prev.map((item, index) =>
-            index === rowIndex ? { ...item, [columnId]: value } : item
-          )
+        const id = selectedTab?.getIdFromRow(
+          table.getRowModel().rows[rowIndex].original
         );
 
-        const id = table.getRowModel().rows[rowIndex].original.id;
-
-        api
-          .put(id, {
-            [columnId]: value,
-          })
-          .catch(() => {
-            setMemoData((prev) =>
-              prev.map((item, index) =>
-                index === rowIndex
-                  ? { ...item, [columnId]: previousData }
-                  : item
-              )
-            );
-            console.error("Не вдалося оновити дані на сервері.");
+        selectedTab?.api?.put(id, body as any).catch(() => {
+          setMemoData((prev) => {
+            set(prev[rowIndex], columnId, previousData);
+            return prev;
           });
+          console.error("Не вдалося оновити дані на сервері.");
+        });
 
         skipAutoResetPageIndex();
       },
     },
   });
+
+  const divStyle = "";
+
+  if (!selectedTab)
+    return (
+      <div className="font-serif text-center text-4xl rounded-2xl border border-1 border-black content-center">
+        Please chose correct tab
+      </div>
+    );
 
   if (isLoading) return <div>Loading...</div>;
 
@@ -155,11 +161,14 @@ function GetHeader(table: TanstackTable<any>) {
                         header.column.columnDef.header,
                         header.getContext()
                       )}
-                      {{
-                        asc: " 🔼",
-                        desc: " 🔽",
-                        false: " 🔃",
-                      }[header.column.getIsSorted() as string] ?? null}
+
+                      {!header.column.getCanSort()
+                        ? " 🔒"
+                        : {
+                            asc: " 🔼",
+                            desc: " 🔽",
+                            false: " 🔃",
+                          }[header.column.getIsSorted() as string] ?? null}
                     </div>
                   </>
                 )}

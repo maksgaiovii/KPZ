@@ -1,21 +1,22 @@
 import { createContext, useContext } from "react";
 import { useSearchParams } from "react-router-dom";
+import { TabType } from "../config";
 
 interface ITabContext {
-  tab: string;
-  setTab: (tab: string) => void;
+  tab: TabType;
+  setTab: (tab: TabType) => void;
 }
 
 const TabContext = createContext<ITabContext>({
-  tab: "books",
+  tab: '' as TabType,
   setTab: () => {},
 });
 
 const TabProvider = ({ children }: { children: React.ReactNode }) => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const tab = searchParams.get("tab") || "";
+  const tab = (searchParams.get("tab") || "") as TabType;
 
-  const setTab = (newTab: string) => {
+  const setTab = (newTab: TabType) => {
     setSearchParams({ tab: newTab });
   };
 
