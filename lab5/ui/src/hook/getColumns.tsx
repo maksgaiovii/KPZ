@@ -1,20 +1,38 @@
 import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
 import { toUpperFirstSumbol } from "../util";
-import { Cell } from "../global/components/Table/cell";
+import { Cell, DeleteCell } from "../global/components/Table/cell";
 import { IColumnName } from "../types";
+import { Button } from "../global/components/Form/Field/button";
 
 const columnHelper = createColumnHelper<any>();
 
 export const getColumns = (
-  names: (IColumnName | string)[],
-  parentName = ''
+  names: (IColumnName | string)[]
 ): ColumnDef<any>[] => {
-  return names.map((item,) => {
+  const columns = genereteRecursiveColumns(names);
+  columns.push({
+    accessorKey: "actions",
+    header: "",
+    cell: DeleteCell,
+    id: "actions",
+    enableSorting: false,
+  });
+  return columns;
+};
+
+const genereteRecursiveColumns = (
+  names: (IColumnName | string)[],
+  parentName = ""
+): ColumnDef<any>[] => {
+  return names.map((item) => {
     if (typeof item === "object") {
       return columnHelper.group({
         id: parentName ? `${parentName}.${item.name}` : item.name,
         header: toUpperFirstSumbol([item.name])[0],
-        columns: getColumns(item.arr, parentName ? `${parentName}.${item.name}` : item.name ),
+        columns: genereteRecursiveColumns(
+          item.arr,
+          parentName ? `${parentName}.${item.name}` : item.name
+        ),
       });
     }
 

@@ -42,51 +42,54 @@ export interface IUserRow {
   company: string;
 }
 
-export const Users: IConfigArrayItem<IUser, IUserRow> = {
+export const Users: IConfigArrayItem<IUser, IUserRow, IUserRow> = {
   tabName: "Users",
-  defaultColumns: [
-    "name",
-    "username",
-    "email",
-    {
-      name: "address",
-      arr: ["street", "suite"],
-    },
-    "phone",
-    "website",
-    "company",
-  ],
   api: new Api(`${baseUrl}users`),
-  mapToTable: (data = []) =>
-    data.map(
-      ({ id, name, username, email, address, phone, website, company }) => ({
-        id: id.toString(),
-        name,
-        username,
-        email,
-        address: {
-          street: address.street,
-          suite: address.suite,
-        },
-        phone,
-        website,
-        company: company.name,
-      })
-    ),
-  mapBeforeUpdate: (data, columnName, newValue) => {
-    console.log("🚀 ~ data:", data, columnName, newValue);
-    if (columnName === "company") {
-      return {
-        ...data,
-        company: {
-          name: newValue,
-        },
-      } as unknown as Partial<IUser>;
-    }
+  tableConfig: {
+    defaultColumns: [
+      "name",
+      "username",
+      "email",
+      {
+        name: "address",
+        arr: ["street", "suite"],
+      },
+      "phone",
+      "website",
+      "company",
+    ],
+    mapToTable: (data = []) =>
+      data.map(
+        ({ id, name, username, email, address, phone, website, company }) => ({
+          id: id.toString(),
+          name,
+          username,
+          email,
+          address: {
+            street: address.street,
+            suite: address.suite,
+          },
+          phone,
+          website,
+          company: company.name,
+        })
+      ),
+    mapBeforeUpdate: (data, columnName, newValue) => {
+      console.log("🚀 ~ data:", data, columnName, newValue);
+      if (columnName === "company") {
+        return {
+          ...data,
+          company: {
+            name: newValue,
+          },
+        } as unknown as Partial<IUser>;
+      }
 
-    const copy = JSON.parse(JSON.stringify(data));
-    set(copy, columnName, newValue);
-    return copy;
+      const copy = JSON.parse(JSON.stringify(data));
+      set(copy, columnName, newValue);
+      return copy;
+    },
+    getIdFromRow: ({ id }) => id.toString(),
   },
-  getIdFromRow: ({ id }) => id.toString(),
+  formConfig: {},
 };

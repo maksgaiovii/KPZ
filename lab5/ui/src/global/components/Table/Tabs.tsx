@@ -1,5 +1,6 @@
-import { config, TabType } from "../../config";
-import { useTab } from "../../context/tab";
+import { config, TabType } from "../../../config";
+import { useTab } from "../../../context/tab";
+import { Button } from "../Form/Field/button";
 
 const linkStyles = [
   "inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300",
@@ -7,11 +8,11 @@ const linkStyles = [
 ];
 
 export const Tabs = () => {
-  const { tab, setTab } = useTab();
+  const { tab, setTab, setModalOpen } = useTab();
 
   return (
     <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-      <ul className="flex flex-wrap -mb-px">
+      <ul className="flex flex-wrap -mb-px w-full">
         {config.map(({ tabName }) => (
           <li
             className={
@@ -23,6 +24,9 @@ export const Tabs = () => {
             {tabName}
           </li>
         ))}
+        <div className="ml-auto self-center">
+          <Button onClick={() => setModalOpen(true)}>Add new Entity</Button>
+        </div>
       </ul>
     </div>
   );

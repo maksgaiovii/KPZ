@@ -1,9 +1,11 @@
 import { CellContext, RowData } from "@tanstack/react-table";
 import { useEffect, useState } from "react";
+import { Button } from "../Form/Field/button";
 
 declare module "@tanstack/react-table" {
   interface TableMeta<TData extends RowData> {
     updateData: (rowIndex: number, columnId: string, value: unknown) => void;
+    deleteData: (rowIndex: number) => void;
   }
 }
 
@@ -33,3 +35,14 @@ export const Cell = ({
     />
   );
 };
+
+export const DeleteCell = ({
+  getValue,
+  row: { index },
+  column: { id },
+  table,
+}: CellContext<any, unknown>) => (
+  <Button color="red" onClick={() => table.options.meta?.deleteData(index)}>
+    🗑
+  </Button>
+);

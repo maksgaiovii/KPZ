@@ -10,6 +10,6 @@ export enum Tabs {
   Users = "Users",
 }
 
-export const config: IConfigArrayItem[] = [Todos, Users];
+export const config: IConfigArrayItem<any, any, any>[] = [Todos, Users];
 
 export type TabType = keyof typeof Tabs;
