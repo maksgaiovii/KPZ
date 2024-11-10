@@ -20,11 +20,11 @@ builder.Services.AddDbContext<DbLabsContext>(options =>
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowLocalhost", policy =>
+    options.AddPolicy("AllowLocalhost5173", policy =>
     {
-        policy.WithOrigins("http://localhost:8000") // ¬каж≥ть правильний домен ≥ порт кл≥Їнта
-            .AllowAnyMethod()
-            .AllowAnyHeader();
+        policy.WithOrigins("http://localhost:5173")  // ¬казуЇмо порт вашого фронтенда
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
 });
 
@@ -43,7 +43,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Apply the CORS policy
-app.UseCors("AllowLocalhost");
+app.UseCors("AllowLocalhost5173");
 
 app.UseAuthorization();
 
