@@ -6,6 +6,7 @@ import get from "lodash/get";
 import { ErrorMessage, FieldGroup } from "./Field/field";
 import { Button } from "./Field/button";
 import { useCallback } from "react";
+import { toast } from "react-toast";
 
 type MyFormProps = FormConfigProps<any> & {
   onSubmit: (data: any) => Promise<any>;
@@ -39,9 +40,12 @@ export const MyForm = ({
           response: res,
           setError,
           refetch,
+          toast,
         });
 
         if (!handleBeckendResponse) {
+          toast.success("Data saved successfully");
+          refetch?.();
           closeModal();
         }
       } catch (error: any) {
@@ -58,6 +62,7 @@ export const MyForm = ({
       clearErrors,
       closeModal,
       reset,
+      refetch,
     ]
   );
 

@@ -1,15 +1,20 @@
 import { IConfigArrayItem } from "../types";
+import { Accounts } from "./accounts";
+import { Payments } from "./payments";
 import { Todos } from "./todos";
-import { Users } from "./users";
 
 // here should be the configuration for data, that we want to fetch
-export const baseUrl = "http://localhost:5064/api/";
 
 export enum Tabs {
   Todos = "Todos",
-  Users = "Users",
+  Account = "Account",
+  Payments = "Payments",
 }
 
-export const config: IConfigArrayItem<any, any, any>[] = [Todos, Users];
+export const config: IConfigArrayItem<any, any, any>[] = [
+  Todos,
+  Accounts,
+  Payments,
+];
 
 export type TabType = keyof typeof Tabs;

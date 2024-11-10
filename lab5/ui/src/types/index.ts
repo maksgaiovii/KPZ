@@ -22,6 +22,7 @@ export type BeckendResponseProps = {
   reset: () => void;
   closeModal: () => void;
   refetch?: () => void;
+  toast: typeof import("react-toast").toast;
 };
 
 export type TableConfigProps<Data, Row> = {

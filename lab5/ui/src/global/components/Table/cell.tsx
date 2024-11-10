@@ -1,17 +1,17 @@
-import { CellContext, RowData } from "@tanstack/react-table";
+import { CellContext, Row, RowData } from "@tanstack/react-table";
 import { useEffect, useState } from "react";
 import { Button } from "../Form/Field/button";
 
 declare module "@tanstack/react-table" {
   interface TableMeta<TData extends RowData> {
-    updateData: (rowIndex: number, columnId: string, value: unknown) => void;
-    deleteData: (rowIndex: number) => void;
+    updateData: (row: Row<TData>, columnId: string, value: unknown) => void;
+    deleteData: (row: Row<TData>) => void;
   }
 }
 
 export const Cell = ({
   getValue,
-  row: { index },
+  row,
   column: { id },
   table,
 }: CellContext<any, unknown>) => {
@@ -19,7 +19,7 @@ export const Cell = ({
   const [value, setValue] = useState(initialValue);
 
   const onBlur = () => {
-    table.options.meta?.updateData(index, id, value);
+    table.options.meta?.updateData(row, id, value);
   };
 
   useEffect(() => {
@@ -36,13 +36,8 @@ export const Cell = ({
   );
 };
 
-export const DeleteCell = ({
-  getValue,
-  row: { index },
-  column: { id },
-  table,
-}: CellContext<any, unknown>) => (
-  <Button color="red" onClick={() => table.options.meta?.deleteData(index)}>
+export const DeleteCell = ({ table, row }: CellContext<any, unknown>) => (
+  <Button color="red" onClick={() => table.options.meta?.deleteData(row)}>
     🗑
   </Button>
 );
