@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KPZ_lab5.Models
 {
-    public class Account
+    /*public class Account
     {
         [Key]
         public int AccountId { get; set; }
@@ -111,5 +111,5 @@ namespace KPZ_lab5.Models
     {
         Expense,
         Income
-    }
+    }*/
 }

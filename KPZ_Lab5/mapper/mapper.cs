@@ -8,6 +8,12 @@ namespace KPZ_lab5
     {
         public MappingProfile()
         {
+            CreateMap<DateOnly, DateTime>()
+                .ConvertUsing(date => date.ToDateTime(new TimeOnly(0, 0))); // Перетворення на DateTime без часу
+
+            CreateMap<DateTime, DateOnly>()
+                .ConvertUsing(date => DateOnly.FromDateTime(date));
+
             CreateMap<Account, AccountViewModel>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.AccountId))
                 .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.AccountName)) // "Name" instead of "AccountName"
@@ -22,11 +28,9 @@ namespace KPZ_lab5
 
             CreateMap<Invoice, InvoiceViewModel>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.InvoiceId))
-                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.Status.ToString()))
                 .ForMember(dest => dest.CategoryId, opt => opt.MapFrom(src => src.InvoiceCategoryId)) // CategoryId instead of InvoiceCategoryId
                 .ReverseMap()
                 .ForMember(dest => dest.InvoiceId, opt => opt.MapFrom(src => src.Id))
-                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => Enum.Parse<InvoiceStatus>(src.Status)))
                 .ForMember(dest => dest.InvoiceCategoryId, opt => opt.MapFrom(src => src.CategoryId)); // Reverse mapping
 
             CreateMap<Payment, PaymentViewModel>()
@@ -38,7 +42,7 @@ namespace KPZ_lab5
                 .ForMember(dest => dest.PaymentDate, opt => opt.MapFrom(src => src.Date)) // Reverse mapping
                 .ForMember(dest => dest.PaymentAmount, opt => opt.MapFrom(src => src.Amount)); // Reverse mapping
 
-            CreateMap<InvoiceCategory, InvoiceCategoryViewModel>()
+            CreateMap<Invoicecategory, InvoiceCategoryViewModel>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.InvoiceCategoryId))
                 .ForMember(dest => dest.Name,
                     opt => opt.MapFrom(src => src.CategoryName)) // "Name" instead of "CategoryName"

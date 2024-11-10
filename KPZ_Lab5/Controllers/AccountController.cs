@@ -11,10 +11,10 @@ namespace KPZ_lab5.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly DbLabsContext _context;
         private readonly IMapper _mapper;
 
-        public AccountController(AppDbContext context, IMapper mapper)
+        public AccountController(DbLabsContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

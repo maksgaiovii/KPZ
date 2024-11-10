@@ -56,7 +56,10 @@ namespace KPZ_lab5.ViewModels
         [SwaggerSchema("Total amount of the invoice")]
         public decimal TotalAmount { get; set; }
 
-        [Required]
+        [Required, AllowedValues(
+             ["Paid", "Unpaid", "Overdue"]
+             )
+        ]
         [SwaggerSchema("Current status of the invoice (e.g., 'Paid', 'Unpaid', 'Overdue')")]
         public string Status { get; set; }
 

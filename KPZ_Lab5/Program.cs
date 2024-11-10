@@ -14,16 +14,18 @@ builder.Services.AddControllers();
 // Заміна MySQL на PostgreSQL
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContext");
 
-builder.Services.AddDbContext<AppDbContext>(options =>
+builder.Services.AddDbContext<DbLabsContext>(options =>
     options.UseNpgsql(connectionString)); // Використовуємо PostgreSQL замість MySQL
 
-// Configure CORS to allow requests from http://localhost:8000
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowLocalhost8000", builder =>
-        builder.WithOrigins("http://localhost:8000")
+    options.AddPolicy("AllowLocalhost", policy =>
+    {
+        policy.WithOrigins("http://localhost:8000") // Вкажіть правильний домен і порт клієнта
             .AllowAnyMethod()
-            .AllowAnyHeader());
+            .AllowAnyHeader();
+    });
 });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -41,7 +43,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Apply the CORS policy
-app.UseCors("AllowLocalhost8000");
+app.UseCors("AllowLocalhost");
 
 app.UseAuthorization();
 

@@ -9,59 +9,50 @@ namespace KPZ_lab5.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CounterpartyController : ControllerBase
+    public class CounterpartyController(DbLabsContext context, IMapper mapper) : ControllerBase
     {
-        private readonly AppDbContext _context;
-        private readonly IMapper _mapper;
-
-        public CounterpartyController(AppDbContext context, IMapper mapper)
-        {
-            _context = context;
-            _mapper = mapper;
-        }
-
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CounterpartyViewModel>>> GetCounterparties()
         {
-            var counterparties = await _context.Counterparties.ToListAsync();
-            return _mapper.Map<List<CounterpartyViewModel>>(counterparties);
+            var counterparties = await context.Counterparties.ToListAsync();
+            return mapper.Map<List<CounterpartyViewModel>>(counterparties);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<CounterpartyViewModel>> GetCounterparty(string id)
         {
-            var counterparty = await _context.Counterparties.FindAsync(id);
+            var counterparty = await context.Counterparties.FindAsync(id);
             if (counterparty == null) return NotFound();
-            return _mapper.Map<CounterpartyViewModel>(counterparty);
+            return mapper.Map<CounterpartyViewModel>(counterparty);
         }
 
         [HttpPost]
         public async Task<ActionResult<CounterpartyViewModel>> CreateCounterparty(CounterpartyViewModel counterpartyViewModel)
         {
-            var counterparty = _mapper.Map<Counterparty>(counterpartyViewModel);
-            _context.Counterparties.Add(counterparty);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetCounterparty), new { id = counterparty.TaxId }, _mapper.Map<CounterpartyViewModel>(counterparty));
+            var counterparty = mapper.Map<Counterparty>(counterpartyViewModel);
+            context.Counterparties.Add(counterparty);
+            await context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetCounterparty), new { id = counterparty.TaxId }, mapper.Map<CounterpartyViewModel>(counterparty));
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCounterparty(string id, CounterpartyViewModel counterpartyViewModel)
         {
             if (id != counterpartyViewModel.Id) return BadRequest();
-            var counterparty = _mapper.Map<Counterparty>(counterpartyViewModel);
+            var counterparty = mapper.Map<Counterparty>(counterpartyViewModel);
             counterparty.TaxId = id;
-            _context.Entry(counterparty).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            context.Entry(counterparty).State = EntityState.Modified;
+            await context.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCounterparty(string id)
         {
-            var counterparty = await _context.Counterparties.FindAsync(id);
+            var counterparty = await context.Counterparties.FindAsync(id);
             if (counterparty == null) return NotFound();
-            _context.Counterparties.Remove(counterparty);
-            await _context.SaveChangesAsync();
+            context.Counterparties.Remove(counterparty);
+            await context.SaveChangesAsync();
             return NoContent();
         }
     }
