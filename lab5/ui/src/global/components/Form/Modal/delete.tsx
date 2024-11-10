@@ -7,6 +7,7 @@ import {
   DialogTitle,
 } from ".";
 import { Button } from "../Field/button";
+import { toast } from "react-toast";
 
 type DeleteModalProps = {
   isModalOpen: boolean;
@@ -25,10 +26,14 @@ export const DeleteModal = ({
     setIsLoading(true);
     try {
       await onSubmit();
+      toast.success("Data deleted successfully");
+      closeModal();
+    } catch (error) {
+      toast.error("Error deleting data. Check console");
+      console.error(error);
     } finally {
       setIsLoading(false);
     }
-    closeModal();
   }, [closeModal, onSubmit]);
 
   return (

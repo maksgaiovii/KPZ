@@ -12,6 +12,7 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import { get, set } from "../util";
+import { toast } from "react-toast";
 
 export const usePaternTable = () => {
   const { tab, isModalOpen, setModalOpen } = useTab();
@@ -51,36 +52,47 @@ export const usePaternTable = () => {
     autoResetPageIndex,
     enableMultiSort: true,
     meta: {
-      updateData: (rowIndex, columnId, value) => {
-        const previousData = get(memoData[rowIndex], columnId);
+      updateData: (row, columnId, value) => {
+        const previousData = get(row.original, columnId);
         const body = selectedTab?.tableConfig?.mapBeforeUpdate(
-          memoData[rowIndex],
+          row.original,
           columnId,
           value as string
         );
+        console.log(
+          body,
+          "body",
+          row.original,
+          columnId,
+          value,
+          row.index,
+          "row.index"
+        );
         setMemoData((prev) => {
-          set(prev[rowIndex], columnId, value);
+          set(prev[row.index], columnId, value);
           return prev;
         });
 
-        const id = selectedTab?.tableConfig?.getIdFromRow(
-          table.getRowModel().rows[rowIndex].original
-        );
+        const id = selectedTab?.tableConfig?.getIdFromRow(row.original);
 
-        selectedTab?.api?.put(id, body as any).catch(() => {
-          setMemoData((prev) => {
-            set(prev[rowIndex], columnId, previousData);
-            return prev;
+        selectedTab?.api
+          ?.put(id!, body as any)
+          .then(() => {
+            toast.success("Data updated successfully");
+          })
+          .catch((err) => {
+            setMemoData((prev) => {
+              set(prev[row.index], columnId, previousData);
+              return prev;
+            });
+            toast.error("Something went wrong");
+            console.error(err);
           });
-          console.error("Не вдалося оновити дані на сервері.");
-        });
 
         skipAutoResetPageIndex();
       },
-      deleteData: (rowIndex) => {
-        const id = selectedTab?.tableConfig?.getIdFromRow(
-          table.getRowModel().rows[rowIndex].original
-        );
+      deleteData: (row) => {
+        const id = selectedTab?.tableConfig?.getIdFromRow(row.original);
 
         setDeleteId(id);
       },

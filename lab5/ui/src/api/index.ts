@@ -46,7 +46,7 @@ export class Api<TData> implements IApi<TData> {
     const response = await fetch(`${this.baseUrl}/${id}`, {
       method: "DELETE",
     });
-    return response.json();
+    return response.status !== 204 ? response.json() : response;
   }
 
   async patch(id: string, data: Partial<TData>) {
