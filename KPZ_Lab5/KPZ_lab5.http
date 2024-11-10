@@ -1,6 +1,0 @@
-@KPZ_lab5_HostAddress = http://localhost:5064
-
-GET {{KPZ_lab5_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

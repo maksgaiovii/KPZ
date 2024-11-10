@@ -3,57 +3,80 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KPZ_lab5.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Book> Books { get; set; }
-        public DbSet<ContributorHistory> ContributorHistories { get; set; }
-        public DbSet<PrintingHouseBook> PrintingHouseBooks { get; set; }
-        public DbSet<TextBook> TextBooks { get; set; }
-        public DbSet<TeamMember> TeamMembers { get; set; }
-        public DbSet<PrintingHouse> PrintingHouses { get; set; }
-        public DbSet<Text> Texts { get; set; }
+        // DbSet для нових моделей
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<Counterparty> Counterparties { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<InvoiceCategory> InvoiceCategories { get; set; }
+        public DbSet<Payment> Payments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Composite keys
-            modelBuilder.Entity<PrintingHouseBook>()
-                .HasKey(phb => new { phb.BookId, phb.PrintingHouseId });
+            // Встановлення первинних ключів та послідовностей
+            modelBuilder.Entity<Account>()
+                .Property(a => a.AccountId)
+                .HasDefaultValueSql("nextval('public.account_account_id_seq')");
 
-            modelBuilder.Entity<TextBook>()
-                .HasKey(tb => new { tb.BookId, tb.TextId });
+            modelBuilder.Entity<Invoice>()
+                .Property(i => i.InvoiceId)
+                .HasDefaultValueSql("nextval('public.invoice_invoice_id_seq')");
 
-            // Define relationships and other constraints
-            modelBuilder.Entity<ContributorHistory>()
-                .HasOne(ch => ch.Book)
-                .WithMany(b => b.ContributorHistories)
-                .HasForeignKey(ch => ch.BookId);
+            modelBuilder.Entity<InvoiceCategory>()
+                .Property(ic => ic.InvoiceCategoryId)
+                .HasDefaultValueSql("nextval('public.invoicecategory_invoice_category_id_seq')");
 
-            modelBuilder.Entity<ContributorHistory>()
-                .HasOne(ch => ch.Contributor)
-                .WithMany(tm => tm.ContributorHistories)
-                .HasForeignKey(ch => ch.ContributorId);
+            modelBuilder.Entity<Payment>()
+                .Property(p => p.PaymentId)
+                .HasDefaultValueSql("nextval('public.payment_payment_id_seq')");
 
-            modelBuilder.Entity<PrintingHouseBook>()
-                .HasOne(phb => phb.Book)
-                .WithMany(b => b.PrintingHouseBooks)
-                .HasForeignKey(phb => phb.BookId);
+            // Налаштування зв’язків між моделями
+            modelBuilder.Entity<Invoice>()
+                .HasOne(i => i.Account)
+                .WithMany(a => a.Invoices)
+                .HasForeignKey(i => i.AccountId)
+                .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<PrintingHouseBook>()
-                .HasOne(phb => phb.PrintingHouse)
-                .WithMany(ph => ph.PrintingHouseBooks)
-                .HasForeignKey(phb => phb.PrintingHouseId);
+            modelBuilder.Entity<Invoice>()
+                .HasOne(i => i.Counterparty)
+                .WithMany(c => c.Invoices)
+                .HasForeignKey(i => i.CounterpartyId)
+                .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<TextBook>()
-                .HasOne(tb => tb.Book)
-                .WithMany(b => b.TextBooks)
-                .HasForeignKey(tb => tb.BookId);
+            modelBuilder.Entity<Invoice>()
+                .HasOne(i => i.InvoiceCategory)
+                .WithMany(ic => ic.Invoices)
+                .HasForeignKey(i => i.InvoiceCategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<TextBook>()
-                .HasOne(tb => tb.Text)
-                .WithMany(t => t.TextBooks)
-                .HasForeignKey(tb => tb.TextId);
+            modelBuilder.Entity<Payment>()
+                .HasOne(p => p.Invoice)
+                .WithMany(i => i.Payments)
+                .HasForeignKey(p => p.InvoiceId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Домени для специфічних типів даних
+            modelBuilder.Entity<Invoice>()
+                .Property(i => i.Status)
+                .HasColumnType("public.invoice_status")
+                .HasDefaultValue(InvoiceStatus.Unpaid);
+
+            modelBuilder.Entity<InvoiceCategory>()
+                .Property(ic => ic.Type)
+                .HasColumnType("public.category_type")
+                .HasDefaultValue(CategoryType.Expense);
+
+            modelBuilder.Entity<Invoice>()
+                .Property(i => i.TotalAmount)
+                .HasColumnType("public.positive_amount")
+                .HasDefaultValue(0.00);
+
+            modelBuilder.Entity<Payment>()
+                .Property(p => p.PaymentAmount)
+                .HasColumnType("public.positive_amount")
+                .HasDefaultValue(0.00);
         }
     }
 }

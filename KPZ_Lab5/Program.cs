@@ -3,29 +3,32 @@ using KPZ_lab5.Models;
 using KPZ_lab5.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Hosting;
+using KPZ_lab5;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
 
+// Заміна MySQL на PostgreSQL
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContext");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+    options.UseNpgsql(connectionString)); // Використовуємо PostgreSQL замість MySQL
 
-
-// Configure CORS to allow requests from http://localhost:5173
+// Configure CORS to allow requests from http://localhost:8000
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowLocalhost5173", builder =>
-        builder.WithOrigins("http://localhost:5173")
-               .AllowAnyMethod()
-               .AllowAnyHeader());
+    options.AddPolicy("AllowLocalhost8000", builder =>
+        builder.WithOrigins("http://localhost:8000")
+            .AllowAnyMethod()
+            .AllowAnyHeader());
 });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
@@ -38,7 +41,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Apply the CORS policy
-app.UseCors("AllowLocalhost5173");
+app.UseCors("AllowLocalhost8000");
 
 app.UseAuthorization();
 
