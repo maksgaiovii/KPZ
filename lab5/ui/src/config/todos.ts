@@ -49,7 +49,6 @@ export const Todos: IConfigArrayItem<ITodos, ITodos, Omit<ITodos, "id">> = {
       completed: yup.boolean().required("Completed is required"),
     }),
     beforeSendToBekend: (data) => {
-      console.log(data);
       return {
         id: Math.floor(Math.random() * 1000),
         ...data,

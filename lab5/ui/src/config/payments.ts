@@ -1,13 +1,15 @@
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { Api } from "../api";
 import { baseUrl } from "../constants";
 import { IConfigArrayItem } from "../types";
 import * as yup from "yup";
+import { Invoices } from "./invoices";
 
 export interface IPayment {
   id: number;
-  name: string;
   date: string;
   amount: number;
+  invoiceId: number;
 }
 
 export const Payments: IConfigArrayItem<
@@ -18,9 +20,12 @@ export const Payments: IConfigArrayItem<
   tabName: "Payments",
   api: new Api(`${baseUrl}Payment`),
   tableConfig: {
-    defaultColumns: ["name", "amount", "date", "id"],
+    defaultColumns: ["id", "amount", "date", "invoiceId"],
     mapToTable: (data = []) => data,
     mapBeforeUpdate: (data, columnName, newValue) => {
+      if (columnName === "id") {
+        throw new Error("Id is not updatable");
+      }
       return {
         ...data,
         [columnName]: newValue,
@@ -30,13 +35,6 @@ export const Payments: IConfigArrayItem<
   },
   formConfig: {
     fields: {
-      name: {
-        label: "Name",
-        as: "input",
-        inputProps: {
-          type: "text",
-        },
-      },
       date: {
         label: "Date",
         as: "input",
@@ -50,26 +48,39 @@ export const Payments: IConfigArrayItem<
         as: "input",
         inputProps: {
           type: "number",
+          step: 0.01,
           min: 0,
+        },
+      },
+      invoiceId: {
+        label: "Invoice",
+        as: "listbox",
+        listboxProps: {},
+        useGetOptions: () => {
+          const { data } = useQuery({
+            queryKey: [Invoices.tabName],
+            queryFn: () => Invoices?.api?.getAll(),
+            placeholderData: keepPreviousData,
+          });
+          return data
+            ?.filter((item) => item.status === "unpaid")
+            ?.map((item) => ({
+              value: item.id as any,
+              label: `${item.totalAmount} - ${item.dueDate.split("T")[0]}`,
+            }));
         },
       },
     },
     yupSchema: yup.object().shape({
-      name: yup.string().required("Name is required"),
-      date: yup
-        .string()
-        .matches(
-          /^(\d{4})-(\d{2})-(\d{2})$/,
-          "Date must be in the format YYYY-MM-DD"
-        ),
       amount: yup
         .number()
         .min(0, "Amount must be greater than or equal to 0")
         .required("Amount is required"),
+      invoiceId: yup.number().required("Invoice is required"),
+      date: yup.string().required("Date is required"),
     }),
     beforeSendToBekend: (data) => {
-      console.log(data);
-      return (data.date = new Date(data.date!).toISOString());
+      return data;
     },
     formTitle: "Payment Form",
   },

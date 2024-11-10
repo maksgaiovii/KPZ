@@ -21,6 +21,7 @@ export function Listbox<T>({
   children?: React.ReactNode;
 } & Omit<Headless.ListboxProps<typeof Fragment, T>, "as" | "multiple"> & {
     options?: Options;
+    getOptions?: () => Promise<Options>;
   }) {
   return (
     <Headless.Listbox {...props} multiple={false} as='ul'>

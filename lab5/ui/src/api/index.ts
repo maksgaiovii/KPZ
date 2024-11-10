@@ -1,5 +1,5 @@
 export interface IApi<TData> {
-  getAll: () => Promise<TData>;
+  getAll: () => Promise<TData[]>;
   getById: (id: string) => Promise<TData>;
   post: (data: TData) => Promise<TData>;
   put: (id: string, data: Partial<TData>) => Promise<TData>;
@@ -12,12 +12,12 @@ export class Api<TData> implements IApi<TData> {
 
   async getAll() {
     const response = await fetch(this.baseUrl);
-    return response.json();
+    return returnJSON(response) as Promise<TData[]>;
   }
 
   async getById(id: string) {
     const response = await fetch(`${this.baseUrl}/${id}`);
-    return response.json();
+    return returnJSON(response) as Promise<TData>;
   }
 
   async post(data: TData) {
@@ -28,7 +28,7 @@ export class Api<TData> implements IApi<TData> {
       },
       body: JSON.stringify(data),
     });
-    return response.json();
+    return returnJSON(response) as Promise<TData>;
   }
 
   async put(id: string, data: Partial<TData>) {
@@ -39,14 +39,14 @@ export class Api<TData> implements IApi<TData> {
       },
       body: JSON.stringify(data),
     });
-    return response.json();
+    return returnJSON(response) as Promise<TData>;
   }
 
   async delete(id: string) {
     const response = await fetch(`${this.baseUrl}/${id}`, {
       method: "DELETE",
     });
-    return response.status !== 204 ? response.json() : response;
+    return returnJSON(response) as Promise<TData>;
   }
 
   async patch(id: string, data: Partial<TData>) {
@@ -57,6 +57,10 @@ export class Api<TData> implements IApi<TData> {
       },
       body: JSON.stringify(data),
     });
-    return response.json();
+    return returnJSON(response) as Promise<TData>;
   }
+}
+
+function returnJSON<T>(response: Response): Promise<T> | Response {
+  return response.status !== 204 ? response.json() : response;
 }
