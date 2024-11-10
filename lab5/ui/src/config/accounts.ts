@@ -17,7 +17,7 @@ export const Accounts: IConfigArrayItem<
   tabName: "Accounts",
   api: new Api(`${baseUrl}Account`),
   tableConfig: {
-    defaultColumns: ["name", "currency", "id"],
+    defaultColumns: ["name", "currency"],
     mapToTable: (data = []) => data,
     mapBeforeUpdate: (data, columnName, newValue) => {
       return {
@@ -54,7 +54,6 @@ export const Accounts: IConfigArrayItem<
       currency: yup.string().required("Currency is required"),
     }),
     beforeSendToBekend: (data) => {
-      console.log(data);
       return data;
     },
     formTitle: "Account Form",

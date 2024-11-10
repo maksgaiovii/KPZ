@@ -53,43 +53,40 @@ export const usePaternTable = () => {
     enableMultiSort: true,
     meta: {
       updateData: (row, columnId, value) => {
-        const previousData = get(row.original, columnId);
-        const body = selectedTab?.tableConfig?.mapBeforeUpdate(
-          row.original,
-          columnId,
-          value as string
-        );
-        console.log(
-          body,
-          "body",
-          row.original,
-          columnId,
-          value,
-          row.index,
-          "row.index"
-        );
-        setMemoData((prev) => {
-          set(prev[row.index], columnId, value);
-          return prev;
-        });
-
-        const id = selectedTab?.tableConfig?.getIdFromRow(row.original);
-
-        selectedTab?.api
-          ?.put(id!, body as any)
-          .then(() => {
-            toast.success("Data updated successfully");
-          })
-          .catch((err) => {
-            setMemoData((prev) => {
-              set(prev[row.index], columnId, previousData);
-              return prev;
-            });
-            toast.error("Something went wrong");
-            console.error(err);
+        try {
+          const previousData = get(row.original, columnId);
+          const body = selectedTab?.tableConfig?.mapBeforeUpdate(
+            row.original,
+            columnId,
+            value as string
+          );
+          console.log(body, previousData, columnId, value);
+          setMemoData((prev) => {
+            set(prev[row.index], columnId, value);
+            return prev;
           });
 
-        skipAutoResetPageIndex();
+          const id = selectedTab?.tableConfig?.getIdFromRow(row.original);
+
+          selectedTab?.api
+            ?.put(id!, body as any)
+            .then(() => {
+              toast.success("Data updated successfully");
+            })
+            .catch((err) => {
+              setMemoData((prev) => {
+                set(prev[row.index], columnId, previousData);
+                return prev;
+              });
+              toast.error("Something went wrong");
+              console.error(err);
+            });
+
+          skipAutoResetPageIndex();
+        } catch (err) {
+          toast.error(err.message);
+          return;
+        }
       },
       deleteData: (row) => {
         const id = selectedTab?.tableConfig?.getIdFromRow(row.original);

@@ -46,6 +46,7 @@ export type FormConfigProps<Form> = {
       textareaProps?: ComponentProps<typeof Textarea>;
       checkboxProps?: ComponentProps<typeof Checkbox>;
       listboxProps?: ComponentProps<typeof Listbox>;
+      useGetOptions?: () => { value: string; label: string }[] | undefined;
     };
   };
   yupSchema: Schema<Partial<Form>>;

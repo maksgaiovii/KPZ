@@ -27,7 +27,10 @@ export const MyField = ({ field, config, error }: MyFieldProps) => {
     textareaProps,
     checkboxProps,
     listboxProps,
+    useGetOptions,
   } = config;
+
+  const options = useGetOptions?.();
 
   switch (as) {
     case "input":
@@ -44,7 +47,7 @@ export const MyField = ({ field, config, error }: MyFieldProps) => {
         <Field>
           <Label>{label}</Label>
           <Select {...field} {...selectProps}>
-            {selectProps?.options?.map(({ label, value }, index) => (
+            {(selectProps?.options || options)?.map(({ label, value }, index) => (
               <option key={index + "otion" + label} value={value}>
                 {label}
               </option>
@@ -77,7 +80,7 @@ export const MyField = ({ field, config, error }: MyFieldProps) => {
         <Field>
           <Label>{label}</Label>
           <Listbox {...field} {...listboxProps}>
-            {listboxProps?.options?.map(({ value, label }, idx) => (
+            {(listboxProps?.options || options)?.map(({ value, label }, idx) => (
               <ListboxOption key={idx + "list" + label} value={value}>
                 <ListboxLabel>{label}</ListboxLabel>
               </ListboxOption>
