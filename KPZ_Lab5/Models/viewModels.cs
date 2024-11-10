@@ -87,6 +87,5 @@ namespace KPZ_lab5.ViewModels
     {
         public int Id { get; set; }
         public string Name { get; set; } // Changed to "Name"
-        public string Description { get; set; }
     }
 }
