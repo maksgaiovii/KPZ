@@ -18,7 +18,7 @@ export const MyForm = ({
   fields,
   yupSchema,
   onSubmit: submit,
-  beforeSendToBekend,
+  beforeSendToBackend,
   handleBeckendResponse,
   closeModal,
   refetch,
@@ -30,7 +30,7 @@ export const MyForm = ({
 
   const onSubmit = useCallback(
     async (data) => {
-      data = beforeSendToBekend ? beforeSendToBekend(data) : data;
+      data = beforeSendToBackend ? beforeSendToBackend(data) : data;
       try {
         const res = await submit(data);
         handleBeckendResponse?.({
@@ -55,7 +55,7 @@ export const MyForm = ({
       }
     },
     [
-      beforeSendToBekend,
+      beforeSendToBackend,
       submit,
       handleBeckendResponse,
       setError,

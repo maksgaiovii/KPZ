@@ -50,7 +50,7 @@ export type FormConfigProps<Form> = {
     };
   };
   yupSchema: Schema<Partial<Form>>;
-  beforeSendToBekend?: (data: Partial<Form>) => any;
+  beforeSendToBackend?: (data: Partial<Form>) => any;
   handleBeckendResponse?: (props: BeckendResponseProps) => void;
   formTitle: string;
 };

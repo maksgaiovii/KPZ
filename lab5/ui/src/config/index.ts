@@ -1,29 +1,34 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { IConfigArrayItem } from "../types";
-import { Accounts } from "./accounts";
-import { Conterpaties } from "./counterparties";
-import { Categories } from "./invoiceCategories";
-import { Invoices } from "./invoices";
-import { Payments } from "./payments";
-import { Todos } from "./todos";
+import { Books } from "./books";
+import { ContributorHistories } from "./contibutorHistory";
+import { PrintingHouses } from "./printingHouse";
+import { PrintingHouseBooks } from "./printingHouseBook";
+import { TeamMembers } from "./teamMembers";
+import { TextBooks } from "./textBook";
+import { Texts } from "./texts";
 
-// here should be the configuration for data, that we want to fetch
-
+// Enum for Tabs
 export enum Tabs {
-  Todos = "Todos",
-  Account = "Account",
-  Payments = "Payments",
-  Invoices = "Invoices",
-  Categories = "Categories",
-  Conterpaties = "Conterpaties",
+  Books = "Books",
+  ContributorHistories = "ContributorHistories",
+  PrintingHouses = "PrintingHouses",
+  PrintingHouseBooks = "PrintingHouseBooks",
+  TeamMembers = "TeamMembers",
+  TextBooks = "TextBooks",
+  Texts = "Texts",
 }
 
+// Configuration for each tab with their respective types based on IConfigArrayItem
 export const config: IConfigArrayItem<any, any, any>[] = [
-  Todos,
-  Accounts,
-  Payments,
-  Invoices,
-  Categories,
-  Conterpaties,
+  Books,
+  ContributorHistories,
+  PrintingHouses,
+  PrintingHouseBooks,
+  TeamMembers,
+  TextBooks,
+  Texts,
 ];
 
+// Type for TabType using the Tabs enum
 export type TabType = keyof typeof Tabs;
