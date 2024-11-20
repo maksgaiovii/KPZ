@@ -18,6 +18,6 @@ namespace KPZ_lab5.Models
         public string Address { get; set; }
 
         // Navigation property for the relationship with PrintingHouseBook
-        public ICollection<PrintingHouseBook> PrintingHouseBooks { get; set; }
+        public ICollection<PrintingHouseBook>? PrintingHouseBooks { get; set; }
     }
 }

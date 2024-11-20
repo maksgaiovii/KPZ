@@ -24,6 +24,6 @@ namespace KPZ_lab5.Models
         public string Title { get; set; }
 
         // Navigation property for the relationship with TextBook
-        public ICollection<TextBook> TextBooks { get; set; }
+        public ICollection<TextBook>? TextBooks { get; set; }
     }
 }

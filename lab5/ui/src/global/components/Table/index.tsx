@@ -24,7 +24,7 @@ export const Table = () => {
     onDelete,
   } = usePaternTable();
 
-  const content = useCallback(() => {
+  const content = () => {
     if (!selectedTab)
       return <div className={divStyle}>Please chose correct tab</div>;
 
@@ -38,7 +38,7 @@ export const Table = () => {
         <Pagination table={table} />
       </>
     );
-  }, [selectedTab, isLoading, error, table, tab]);
+  };
 
   return (
     <>

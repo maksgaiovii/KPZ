@@ -12,13 +12,9 @@ export interface IText {
   title: string;
 }
 
-export const Texts: IConfigArrayItem<
-  IText,
-  IText,
-  Omit<IText, "textId">
-> = {
+export const Texts: IConfigArrayItem<IText, IText, Omit<IText, "textId">> = {
   tabName: "Texts",
-  api: new Api(`${baseUrl}Text`),
+  api: new Api(`${baseUrl}Texts`),
   tableConfig: {
     defaultColumns: ["authorName", "authorSurname", "receiptDate", "title"],
     mapToTable: (data = []) => data,

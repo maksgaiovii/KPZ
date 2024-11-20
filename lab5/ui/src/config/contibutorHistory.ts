@@ -25,7 +25,7 @@ export const ContributorHistories: IConfigArrayItem<
   Omit<IContributorHistory, "id">
 > = {
   tabName: "Contributor Histories",
-  api: new Api(`${baseUrl}ContributorHistory`),
+  api: new Api(`${baseUrl}ContributorHistories`),
   tableConfig: {
     defaultColumns: ["startDate", "finishDate", "contributorStatus"],
     mapToTable: (data = []) => data,
@@ -71,7 +71,7 @@ export const ContributorHistories: IConfigArrayItem<
         label: "Contributor Status",
         as: "listbox",
         listboxProps: {
-          options: Object.values(ContributorStatus).map(status => ({
+          options: Object.values(ContributorStatus).map((status) => ({
             value: status,
             label: status,
           })),
@@ -84,9 +84,10 @@ export const ContributorHistories: IConfigArrayItem<
       startDate: yup.string().required("Start Date is required"),
       finishDate: yup.string().nullable(),
       contributorStatus: yup
-      .mixed<ContributorStatus>()
-      .oneOf(Object.values(ContributorStatus), "Invalid status")
-      .required("Contributor Status is required"),    }),
+        .mixed<ContributorStatus>()
+        .oneOf(Object.values(ContributorStatus), "Invalid status")
+        .required("Contributor Status is required"),
+    }),
     beforeSendToBackend: (data) => {
       return data;
     },

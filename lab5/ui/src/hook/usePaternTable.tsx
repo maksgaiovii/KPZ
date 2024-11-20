@@ -101,10 +101,15 @@ export const usePaternTable = () => {
     async (data) => selectedTab?.api.post(data),
     [selectedTab]
   );
-  const onDelete = useCallback(
-    async () => selectedTab?.api.delete(deleteId as string),
-    [selectedTab, deleteId]
-  );
+  const onDelete = useCallback(async () => {
+    const res = await selectedTab?.api.delete(deleteId as string);
+    setMemoData((prev) =>
+      prev.filter(
+        (row) => selectedTab?.tableConfig?.getIdFromRow(row) !== deleteId
+      )
+    );
+    return res;
+  }, [selectedTab, deleteId]);
 
   const closeModal = useCallback(() => setModalOpen(false), [setModalOpen]);
   const closeModalDeleteModal = useCallback(() => setDeleteId(null), []);

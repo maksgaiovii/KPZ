@@ -8,11 +8,11 @@ namespace KPZ_lab5.Models
     {
         [ForeignKey("Book")]
         public int BookId { get; set; }
-        public Book Book { get; set; }
+        public Book? Book { get; set; }
 
         [ForeignKey("PrintingHouse")]
         public int PrintingHouseId { get; set; }
-        public PrintingHouse PrintingHouse { get; set; }
+        public PrintingHouse? PrintingHouse { get; set; }
 
         [Required]
         public DateTime StartDate { get; set; }

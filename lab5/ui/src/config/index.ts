@@ -22,11 +22,8 @@ export enum Tabs {
 // Configuration for each tab with their respective types based on IConfigArrayItem
 export const config: IConfigArrayItem<any, any, any>[] = [
   Books,
-  ContributorHistories,
   PrintingHouses,
-  PrintingHouseBooks,
   TeamMembers,
-  TextBooks,
   Texts,
 ];
 

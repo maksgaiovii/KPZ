@@ -15,7 +15,7 @@ export const TextBooks: IConfigArrayItem<
   Omit<ITextBook, "bookId" | "textId">
 > = {
   tabName: "Text Books",
-  api: new Api(`${baseUrl}TextBook`),
+  api: new Api(`${baseUrl}TextBooks`),
   tableConfig: {
     defaultColumns: ["bookId", "textId"],
     mapToTable: (data = []) => data,

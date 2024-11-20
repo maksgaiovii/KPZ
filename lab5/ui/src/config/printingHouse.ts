@@ -16,7 +16,7 @@ export const PrintingHouses: IConfigArrayItem<
   Omit<IPrintingHouse, "printingHouseId">
 > = {
   tabName: "Printing Houses",
-  api: new Api(`${baseUrl}PrintingHouse`),
+  api: new Api(`${baseUrl}PrintingHouses`),
   tableConfig: {
     defaultColumns: ["name", "address"],
     mapToTable: (data = []) => data,

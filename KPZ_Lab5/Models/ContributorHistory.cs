@@ -1,6 +1,8 @@
-﻿using System;
+﻿using KPZ_lab5.Converters;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace KPZ_lab5.Models
 {
@@ -28,6 +30,7 @@ namespace KPZ_lab5.Models
         public ContributorStatus ContributorStatus { get; set; }
     }
 
+    [JsonConverter(typeof(ContributorStatusConverter))]
     public enum ContributorStatus
     {
         Active,

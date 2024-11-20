@@ -18,7 +18,7 @@ export const PrintingHouseBooks: IConfigArrayItem<
   IPrintingHouseBook
 > = {
   tabName: "Printing House Books",
-  api: new Api(`${baseUrl}PrintingHouseBook`),
+  api: new Api(`${baseUrl}PrintingHouseBooks`),
   tableConfig: {
     defaultColumns: ["startDate", "finishDate", "booksQuantity"],
     mapToTable: (data = []) => data,

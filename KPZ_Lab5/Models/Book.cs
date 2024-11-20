@@ -1,7 +1,9 @@
-﻿using System;
+﻿using KPZ_lab5.Converters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace KPZ_lab5.Models
 {
@@ -26,10 +28,12 @@ namespace KPZ_lab5.Models
         public BookStatus BookStatus { get; set; }
 
         // Navigation Properties
-        public ICollection<ContributorHistory> ContributorHistories { get; set; }
-        public ICollection<PrintingHouseBook> PrintingHouseBooks { get; set; }
-        public ICollection<TextBook> TextBooks { get; set; }
+        public ICollection<ContributorHistory>? ContributorHistories { get; set; }
+        public ICollection<PrintingHouseBook>? PrintingHouseBooks { get; set; }
+        public ICollection<TextBook>? TextBooks { get; set; }
     }
+
+    [JsonConverter(typeof(BookStatusConverter))]
 
     public enum BookStatus
     {

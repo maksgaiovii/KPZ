@@ -18,7 +18,7 @@ export const TeamMembers: IConfigArrayItem<
   Omit<ITeamMember, "teamMemberId">
 > = {
   tabName: "Team Members",
-  api: new Api(`${baseUrl}TeamMember`),
+  api: new Api(`${baseUrl}TeamMembers`),
   tableConfig: {
     defaultColumns: ["name", "surname", "email", "role"],
     mapToTable: (data = []) => data,
@@ -72,7 +72,10 @@ export const TeamMembers: IConfigArrayItem<
         .string()
         .email("Email must be valid")
         .required("Email is required"),
-      role: yup.string().oneOf(["Editor", "Illustrator", "CoverDesigner"]).required("Role is required"),
+      role: yup
+        .string()
+        .oneOf(["Editor", "Illustrator", "CoverDesigner"])
+        .required("Role is required"),
     }),
     beforeSendToBackend: (data) => {
       return data;
