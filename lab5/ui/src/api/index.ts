@@ -61,6 +61,7 @@ export class Api<TData> implements IApi<TData> {
   }
 }
 
-function returnJSON<T>(response: Response): Promise<T> | Response {
+async function returnJSON<T>(response: Response): Promise<T> {
+  if (!response.ok) throw new Error(await response.json() || response.statusText);
   return response.status !== 204 ? response.json() : response;
 }

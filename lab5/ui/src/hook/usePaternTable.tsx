@@ -61,6 +61,7 @@ export const usePaternTable = () => {
             value as string
           );
           console.log(body, previousData, columnId, value);
+          if(previousData === value) return;
           setMemoData((prev) => {
             set(prev[row.index], columnId, value);
             return prev;

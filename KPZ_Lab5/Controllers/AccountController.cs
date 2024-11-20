@@ -38,6 +38,7 @@ namespace KPZ_lab5.Controllers
         [HttpPost]
         public async Task<ActionResult<AccountViewModel>> CreateAccount(AccountViewModel accountViewModel)
         {
+            return BadRequest("{}");
             var account = _mapper.Map<Account>(accountViewModel);
             _context.Accounts.Add(account);
             await _context.SaveChangesAsync();
